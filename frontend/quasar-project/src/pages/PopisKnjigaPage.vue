@@ -14,6 +14,13 @@
 export default {
   data() {
     return {
+      columns: [
+        { name: 'id', label: 'ID', field: 'id', align: 'left' },
+        { name: 'naslov', label: 'Naslov', field: 'naslov', align: 'left' },
+        { name: 'autor', label: 'Autor', field: 'autor', align: 'left' },
+        { name: 'opis', label: 'Opis', field: 'opis', align: 'left' },
+        { name: 'stanje', label: 'Stanje', field: 'stanje', align: 'left' },
+      ],
       books: [
       {
           id: 1,
@@ -88,13 +95,6 @@ export default {
           image: require("src/assets/images/knjiga9.jpg"),
         },
       ],
-      columns: [
-        { name: 'id', label: 'ID', field: 'id', align: 'left' },
-        { name: 'naslov', label: 'Naslov', field: 'naslov', align: 'left' },
-        { name: 'autor', label: 'Autor', field: 'autor', align: 'left' },
-        { name: 'opis', label: 'Opis', field: 'opis', align: 'left' },
-        { name: 'stanje', label: 'Stanje', field: 'stanje', align: 'left' }
-      ]
     };
   }
 };
